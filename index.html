@@ -31,20 +31,20 @@
             </ul>
         </div>
     </nav>
-    <div class='container'>
+    <div class='container' ng-controller="answers">
         <div class='row'>
             <div id='question-sidebar' class='four columns'>
-                <div id='visible-sidebar' ng-controller="sidebar">
+                <div id='visible-sidebar'>
                     <h4>Questions</h4>
-                    <ul ng-repeat="x in questions">
-                        <li id='{{x.id}}'> {{ x.question }} </li>
+                    <ul ng-repeat="x in quesans">
+                        <li id='{{x.id}} 'ng-click="showSelected($event)"> {{ x.question }} </li>
                     </ul>
                 </div>
             </div>
             <div id='question-content' class='eight columns'>
-                <h4 id='question'>What is the use of the hair all over the body?</h4>
-                <div id="answer feed" data-ng-controller='answers'>
-                    <div class='answer' data-ng-repeat="x in responses">
+                <h4 id='question'>Please Select a Question</h4>
+                <div class="answer-feed" data-ng-repeat="x in quesans" ng-show="{{x.id}}" >
+                    <div class='answer' data-ng-repeat="x in x.responses">
                         <div class='answer-header'>
                             <img class='profile-pic' src='{{x.pic}}' alt='profile-picture' />
                             <h2 class='name'> {{x.name}} </h2>
@@ -52,7 +52,6 @@
                             <p class='like-counter'>{{x.likes}}</p>
                             <img class='like-button' src='/images/icons/like.svg' alt='like button' />
                         </div>
-
                         <p> {{x.answer}} </p>
                     </div>
                 </div>

@@ -1,43 +1,87 @@
 var app = angular.module("question_1", []);
 
 app.controller("answers", function($scope) {
-    $scope.responses = [
-        {
-            name: 'Charles Darwin',
-            pic: '/images/darwin.png',
-            answer: 'This is where his answer would go...',
-            likes: '2'
-        },
-        {
-            name: 'Georges Cuvier',
-            pic: '/images/cuvier.png',
-            answer: 'This is where his answer would go...',
-            likes: '4'
-        },
-        {
-            name: 'Jean-Baptiste Lamarck',
-            pic: '/images/lamarck.png',
-            answer: 'This is where his answer would go...',
-            likes: '6'
-        },
-        {
-            name: 'Natural Historians',
-            pic: '/images/lamark.png',
-            answer: 'This is where the answer would go...',
-            likes: '3'
-        }
-    ];
-});
 
-app.controller("sidebar", function($scope) {
-    $scope.questions = [
-        {
+    $scope.showSelected = function(passedEvent) {
+        var requested = (passedEvent.target.attributes.id.value).replace(/\s/g,'');
+
+        document.getElementById("question").innerHTML=passedEvent.target.innerHTML;
+
+        $scope.q1 = false;
+        $scope.q2 = false;
+
+        if(requested.valueOf() == "q1"){
+          $scope.q1 = true;
+        }
+        else if(requested.valueOf() == "q2"){
+          $scope.q2 = true;
+        }
+    };
+
+    $scope.tst = function() {
+        console.log('tssssst');
+    };
+
+    $scope.quesans = [{
+            question: 'Why is the seal covered in fur?',
             id: 'q1',
-            question: 'What is the purpose of the fur?',
+            fnc: 'tst()',
+            responses: [{
+                    name: 'Charles Darwin',
+                    pic: '/images/darwin.png',
+                    likes: '2',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                },
+                {
+                    name: 'Jean-Baptiste Lamarck',
+                    pic: '/images/lamarck.png',
+                    likes: '1',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                },
+                {
+                    name: 'Georges Cuvier',
+                    pic: '/images/cuvier.png',
+                    likes: '3',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                },
+                {
+                    name: 'Natural Historians',
+                    pic: '/images/lamarck.png',
+                    likes: '6',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                }
+            ]
         },
         {
+            question: "What does it eat, based on it's teeth?",
             id: 'q2',
-            question: 'Why is the fur seal communal?',
+            fnc: 'showQ2()',
+            responses: [{
+                    name: 'Charles Darwin',
+                    pic: '/images/darwin.png',
+                    likes: '2',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                },
+                {
+                    name: 'Jean-Baptiste Lamarck',
+                    pic: '/images/lamarck.png',
+                    likes: '1',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                },
+                {
+                    name: 'Georges Cuvier',
+                    pic: '/images/cuvier.png',
+                    likes: '3',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                },
+                {
+                    name: 'Natural Historians',
+                    pic: '/images/lamarck.png',
+                    likes: '6',
+                    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium semper sapien, eu ullamcorper tortor. Nullam venenatis dolor a tincidunt tempus. Sed lacinia, ex vulputate lobortis lobortis, lectus velit finibus tortor, ac ornare mauris nisi sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna id neque iaculis vestibulum. Donec consectetur velit id metus varius, nec tincidunt mi vehicula. Donec faucibus diam at nunc consectetur volutpat in in risus. Duis semper diam nec orci viverra, eget vulputate turpis dictum. Morbi orci ex, ullamcorper sit amet ligula nec, finibus laoreet mi.'
+                }
+            ]
         }
     ];
+
 });
