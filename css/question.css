@@ -1,13 +1,18 @@
-#question-content>h2{
+#question-content>h4{
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 15px;
   background-color: white;
   border: 1px solid #dddddd;
   border-radius: 5px;
-  width: 70%;
   display: block;
   padding: 20px;
   text-align: center;
+}
+
+@media (min-width: 750px) {
+  #question-content>h4{
+    margin-top: 90px;
+  }
 }
 
 .answer{
@@ -16,7 +21,6 @@
   background-color: white;
   border: 1px solid #dddddd;
   border-radius: 5px;
-  width: 70%;
   display: block;
   padding: 20px;
 }
@@ -37,12 +41,14 @@
 
 .name{
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   padding-left: 8px;
 }
+
 .shared{
   font-size: 12px;
 }
+
 .name, .shared{
   display: inline-block;
   line-height: 70px;
@@ -75,7 +81,7 @@
     display: inline-block;
     float: right;
     line-height: 75px;
-    margin-right: 20px;
+    margin-right: 0px;
     font-weight: 700;
     color: #ca6151;
 }

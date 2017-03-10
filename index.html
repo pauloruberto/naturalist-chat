@@ -7,6 +7,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/question.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
     <!--Scripts-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script type='text/javascript' src='/scripts/question_1.js'></script>
@@ -15,7 +17,7 @@
 <body ng-app='question_1'>
     <nav>
         <div>
-            <h3 id='branding' class='lg-full-width'>NATURALIST CHAT</h3>
+            <h6 id='branding'>NATURALIST CHAT</h6>
             <ul id='nav-links'>
                 <li>
                     <a id='nav-link-about' href=''>QUESTIONS</a>
@@ -29,21 +31,32 @@
             </ul>
         </div>
     </nav>
-    <div id='question-content'>
-      <h2 id='question'>What is the use of the hair all over the body?</h2>
-      <div id="answer feed" data-ng-controller='answers'>
-          <div class='answer' data-ng-repeat="x in responses">
-            <div class='answer-header'>
-              <img class='profile-pic' src='{{x.pic}}' alt='profile-picture'/>
-              <h2 class='name'> {{x.name}} </h2>
-              <p class='shared'> shared a response</p>
-              <p class='like-counter'>{{x.likes}}</p>
-              <img class='like-button' src='/images/icons/like.svg' alt='like button' />
+    <div class='container'>
+        <div class='row'>
+            <div id='question-sidebar' class='four columns'>
+                <div id='visible-sidebar' ng-controller="sidebar">
+                    <h4>Questions</h4>
+                    <ul ng-repeat="x in questions">
+                        <li id='{{x.id}}'> {{ x.question }} </li>
+                    </ul>
+                </div>
             </div>
+            <div id='question-content' class='eight columns'>
+                <h4 id='question'>What is the use of the hair all over the body?</h4>
+                <div id="answer feed" data-ng-controller='answers'>
+                    <div class='answer' data-ng-repeat="x in responses">
+                        <div class='answer-header'>
+                            <img class='profile-pic' src='{{x.pic}}' alt='profile-picture' />
+                            <h2 class='name'> {{x.name}} </h2>
+                            <p class='shared'> shared a response</p>
+                            <p class='like-counter'>{{x.likes}}</p>
+                            <img class='like-button' src='/images/icons/like.svg' alt='like button' />
+                        </div>
 
-              <p> {{x.answer}} </p>
-          </div>
-      </div>
-    </div>
+                        <p> {{x.answer}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>

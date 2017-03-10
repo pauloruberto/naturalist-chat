@@ -1,0 +1,34 @@
+#question-sidebar{
+  padding-top: 90px;
+  display: inline-block;
+
+}
+
+#visible-sidebar{
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#visible-sidebar>h4{
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#visible-sidebar>ul{
+  list-style: none;
+}
+
+#visible-sidebar>ul>li{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#visible-sidebar>ul>li:hover{
+  color: #0FA0CE;
+}
