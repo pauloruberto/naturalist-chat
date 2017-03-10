@@ -1,0 +1,81 @@
+#question-content>h2{
+  margin: 0 auto;
+  margin-top: 90px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 70%;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.answer{
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 70%;
+  display: block;
+  padding: 20px;
+}
+
+.answer-header{
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.profile-pic{
+  height: 70px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 8px;
+}
+.shared{
+  font-size: 12px;
+}
+.name, .shared{
+  display: inline-block;
+  line-height: 70px;
+  vertical-align: top;
+}
+
+
+.like-button {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 27.5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.like-button:hover {
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 25px;
+    margin-right: 7.5px;
+    cursor: pointer;
+}
+
+.like-counter {
+    display: inline-block;
+    float: right;
+    line-height: 75px;
+    margin-right: 20px;
+    font-weight: 700;
+    color: #ca6151;
+}
