@@ -1,4 +1,4 @@
-var app = angular.module("question_1", []);
+var app = angular.module("questions", []);
 
 app.controller("answers", function($scope) {
 
