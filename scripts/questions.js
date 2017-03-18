@@ -42,7 +42,7 @@ app.controller("answers", function($scope) {
                     name: 'Charles Darwin',
                     pic: '/images/darwin.png',
                     likes: Math.floor((Math.random() * 10) + 1),
-                    answer: ''
+                    answer: 'The northern fur seal is covered in a coat of fur due to natural selection. Over time, seals in that area who had a coat of fur outperformed those who did not, resulting in a higher fitness. Any organism with a greater chance of survival, will have a greater chance for reproduction. This increased the number of offspring from seals with a coat of fur, spread throughout the population over time, resulting in the fur covered seal that we see today.'
                 },
                 {
                     name: 'Jean-Baptiste Lamarck',
@@ -238,7 +238,7 @@ app.controller("answers", function($scope) {
             ]
         },
         {
-            question: "Why are there differences between types of fur seals?",
+            question: "Why are there differences within the fur seals?",
             id: 'q8',
             responses: [{
                     name: 'Charles Darwin',
