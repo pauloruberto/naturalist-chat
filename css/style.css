@@ -87,7 +87,7 @@ nav {
     display: block;
     text-align: center;
     line-height: 70px;
-    padding-left: 20px;
+    padding-left: 0px;
     transition: 0.5s;
     border-top: 0px;
     background-color: white;
@@ -107,6 +107,7 @@ nav {
       border-bottom: 0px solid #dddddd;
       width: auto;
       background-color: rgba(0, 0, 0, 0);
+      padding-left: 20px;
   }
 
   #hamburger-button{

@@ -15,17 +15,21 @@
 #visible-sidebar>h4{
   text-align: center;
   border-bottom: 1px solid #dddddd;
-  margin-bottom: 15px;
+  margin-bottom: 2.5rem;
   padding-bottom: 15px;
 }
 
 #visible-sidebar>ul{
   list-style: none;
+  margin: 0;
 }
 
 #visible-sidebar>ul>li{
   cursor: pointer;
   transition: 0.5s;
+  font-weight: bold;
+  margin: 0 !important;
+  padding-bottom: 1.3rem;
 }
 
 #visible-sidebar>ul>li:hover{
