@@ -169,7 +169,7 @@ app.controller("answers", function($scope) {
                     name: 'Georges Cuvier',
                     pic: '/images/cuvier.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: 'They are not related to other species of seas, past or present. Each species breed true to their type, and are not related. The northern fur seals also have not evolved from any past species. Paleontological evidence shows that successive layers of geological strata have distinctive fossil types. No evidence for evolution is present in fossils.'
+                    answer: 'They are not related to other species of seals, past or present. Each species breed true to their type, and are not related. The northern fur seals also have not evolved from any past species. Paleontological evidence shows that successive layers of geological strata have distinctive fossil types. No evidence for evolution is present in fossils.'
                 },
                 {
                     name: 'John Ray',

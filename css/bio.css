@@ -1,21 +1,24 @@
-#profile-pic-container{
+#about-site{
   margin-top: 90px;
 }
-
-#profile-pic-container>img{
+#pic-container{
+  margin-top: 15px;
+}
+#pic-container>img, #pic-container>video{
   width: 100%;
   border: 2px solid #dddddd;
   border-radius: 5px;
   box-sizing: border-box;
   padding: 5px;
   background-color: white;
+  margin-bottom: 5px;
 }
 
 #profile-content{
   padding-bottom: 50px;
 }
 
-#profile-content>h4{
+#profile-content>h4, #about-site>h4{
   margin: 0 auto;
   margin-top: 15px;
   background-color: white;
@@ -26,14 +29,7 @@
   text-align: center;
 }
 
-#about-header{
-  margin-top: 30px !important;
-}
-
 @media (min-width: 750px) {
-  #profile-content>h4{
-    margin-top: 90px;
-  }
 }
 
 .descrip{
@@ -44,4 +40,32 @@
   border-radius: 5px;
   display: block;
   padding: 20px;
+}
+
+.descrip>h6{
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+.descrip>p{
+  display: inline-block;
+}
+
+.line{
+  background-color: #dddddd;
+  height: 1px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.credit{
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.credit>p{
+  display: inline-block;
 }
