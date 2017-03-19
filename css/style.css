@@ -108,6 +108,7 @@ nav {
       width: auto;
       background-color: rgba(0, 0, 0, 0);
       padding-left: 20px;
+      cursor: pointer;
   }
 
   #hamburger-button{
