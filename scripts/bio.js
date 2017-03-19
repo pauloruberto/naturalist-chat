@@ -4,7 +4,7 @@ app.controller("profile", function($scope) {
     $scope.people = [{
             name: 'Charles Darwin',
             pic: '/images/darwin.png',
-            bio: ''
+            bio: 'I am a English naturalist, geologist, and biologist. I believe that all of life has descended from common ancestors, resulting in the species that we see today. In 1831, I embarked on a five-year journey around the world aboard the HMS Beagle. By studying species across the globe, I was able to formulate my hypothesis on the process of natural selection. Natural selection is the process where organisms become best adapted to their environment over time, allowing them to survive and increase production of offspring.'
         },
         {
             name: 'Jean-Baptiste Lamarck',
