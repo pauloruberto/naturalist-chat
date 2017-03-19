@@ -1,10 +1,10 @@
-#about-site{
+.row:first-of-type{
   margin-top: 90px;
 }
 #pic-container{
   margin-top: 15px;
 }
-#pic-container>img, #pic-container>video{
+#pic-container>img, #pic-container>video, #profile-pic-container>img{
   width: 100%;
   border: 2px solid #dddddd;
   border-radius: 5px;
@@ -13,14 +13,16 @@
   background-color: white;
   margin-bottom: 5px;
 }
+#profile-pic-container>img{
+  margin-bottom: 20px;
+}
 
 #profile-content{
   padding-bottom: 50px;
 }
 
-#profile-content>h4, #about-site>h4{
+#profile-content>h4, #about-site>h4, #seal-header{
   margin: 0 auto;
-  margin-top: 15px;
   background-color: white;
   border: 1px solid #dddddd;
   border-radius: 5px;
@@ -28,6 +30,11 @@
   padding: 20px;
   text-align: center;
 }
+
+#seal-header{
+  margin-top: 15px !important;
+}
+
 
 @media (min-width: 750px) {
 }
