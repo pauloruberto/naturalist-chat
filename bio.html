@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalist Chat</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bio.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <!--Scripts-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script type='text/javascript' src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='/scripts/bio.js'></script>
+    <script type='text/javascript' src="/scripts/functions.js"></script>
+</head>
+
+<body ng-app='bio'>
+    <nav>
+        <div>
+            <h6 id='branding'>NATURALIST CHAT</h6>
+            <img id='hamburger-button' src='/images/icons/hamburger.svg' alt='navigation hamburger' />
+            <ul id='nav-links'>
+                <li>
+                    <a id='nav-link-about' href='/index.html'>QUESTIONS</a>
+                </li>
+                <li>
+                    <a id='nav-link-form' href='/bio.html'>NATURALISTS</a>
+                </li>
+                <li>
+                    <a id='nav-link-form' href='/about.html'>ABOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class='container' data-ng-controller="profile">
+        <div class='row' data-ng-repeat='x in people'>
+            <div id='profile-pic-container' class='four columns'>
+                <img src='{{x.pic}}' />
+            </div>
+            <div id='profile-content' class='eight columns'>
+                <h4 id='profile-name'>{{ x.name }}</h4>
+                <div class="descrip">
+                  <p>{{ x.bio }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

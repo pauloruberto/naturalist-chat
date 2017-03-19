@@ -14,7 +14,6 @@
     <script type='text/javascript' src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type='text/javascript' src='/scripts/questions.js'></script>
     <script type='text/javascript' src="/scripts/functions.js"></script>
-
 </head>
 
 <body ng-app='questions'>
@@ -24,13 +23,13 @@
             <img id='hamburger-button' src='/images/icons/hamburger.svg' alt='navigation hamburger' />
             <ul id='nav-links'>
                 <li>
-                    <a id='nav-link-about' href=''>QUESTIONS</a>
+                    <a id='nav-link-about' href='/index.html'>QUESTIONS</a>
                 </li>
                 <li>
-                    <a id='nav-link-form' href=''>NATURALISTS</a>
+                    <a id='nav-link-form' href='/bio.html'>NATURALISTS</a>
                 </li>
                 <li>
-                    <a id='nav-link-form' href=''>ABOUT</a>
+                    <a id='nav-link-form' href='/about.html'>ABOUT</a>
                 </li>
             </ul>
         </div>
@@ -41,13 +40,13 @@
                 <div id='visible-sidebar'>
                     <h4>Questions</h4>
                     <ul ng-repeat="x in quesans">
-                        <li id='{{x.id}} 'ng-click="showSelected($event)"> {{ x.question }} </li>
+                        <li id='{{x.id}} ' ng-click="showSelected($event)"> {{ x.question }} </li>
                     </ul>
                 </div>
             </div>
             <div id='question-content' class='eight columns'>
                 <h4 id='question'>Please Select a Question</h4>
-                <div class="answer-feed" data-ng-repeat="x in quesans" ng-show="{{x.id}}" >
+                <div class="answer-feed" data-ng-repeat="x in quesans" ng-show="{{x.id}}">
                     <div class='answer' data-ng-repeat="x in x.responses">
                         <div class='answer-header'>
                             <img class='profile-pic' src='{{x.pic}}' alt='profile-picture' />
