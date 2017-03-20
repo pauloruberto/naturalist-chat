@@ -48,7 +48,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: "The northern fur seal’s pelage or fur is thick and luxuriant, with a dense underfur in a creamy colour. The underfur is obscured by the longer guard hairs, although it is partially visible when the animals are wet. This can be attributed to my law of inheritance of acquired characteristics. The seal needs this thick fur so it can trap air and help keep it warm. Over generations, this characteristic has proved useful in allowing the seal to thrive in its environment, and thus, has been passed on from parent to offspring. Furthermore, species are well adapted to their environment. As the seals live in cold environments, they need their fur to be warm enough to keep them insulated. This can be connected to the idea that there is a nervous fluid driving changes in the organism, which over time, allows these changes to be inherited by the next generation and produce slow adaptation to the environment. Essentially, the fur is preserved by reproduction to new individuals which arise, provided that the acquired modifications are common to both sexes, or at least to the individuals which produce the young."
                 },
                 {
                     name: 'Georges Cuvier',
@@ -77,7 +77,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: "The seal is adapted to the environment it lives in, and has certain characteristics to allow it to function. As a mammal, the seal has lungs that require breathing air to replenish the oxygen. The seal is both a sea and land animal — living in both the ocean as well as on a cool patch of ice or beach. The seal has a powerful sleek body which is encased in blubber to keep it warm. They are strong and flexible, which allow them to tread through the waves and navigate rocky shores. The frequent use of its tail and organs strengthen, which allowed them to be passed on to offspring. The seal can be looked at as an organism which grew in complexity and composition of organization over time. The seal would have originated from spontaneous generation of simple living organisms through action on physical matter by a material life force. Once the living organism was formed, the movements of fluids in living organisms naturally drove them to evolve toward ever greater levels of complexity, eventually producing the seal in its current state."
                 },
                 {
                     name: 'Georges Cuvier',
@@ -105,7 +105,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: "Just as all organisms do, the Northern fur seal species emerged through spontaneous generation of simple living organisms through action on physical matter by a material life force. All living things do not come from a common ancestor, but rather along with spontaneous generation there is an innate force, or a nervous fluid, which drives the species to become more complex. Organisms move in a predictable way based on the fundamental physical principles of alchemy. All life is organized in a vertical chain, with gradation between the lowest forms and the highest forms of life, thus demonstrating a path to progressive developments in nature. There is a tendency for organisms to become more complex and move up the “ladder of progress”, and spontaneous generation is ongoing, with simple organisms being transmuted over time to become more complex. Underlying this tendency to progression was the principle that Creation is in a constant state of advancement. It is an innate quality of nature that organisms constantly 'improve' by successive generation, too slowly to be perceived but observable in the fossil record. The Northern fur seal was created, and as it evolved, it adapted to the environment. Changes in the environment caused changes in the needs of organisms living in that environment, which in turn causes changes in their behaviour."
                 },
                 {
                     name: 'Georges Cuvier',
@@ -134,7 +134,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: 'The northern fur seal have haplodont teeth, which are sharp, conical, and mostly single-rooted, something common in carnivorous marine mammals. The upper canines are prominent, which tells us that the seal must eat fish, as it would use the teeth to tear the flesh apart. The shape and sharpness of these teeth can be attributed to my First Law, which explains that frequent and sustained use of an organ will strengthen and develop it in proposition to the duration of the use, just as the permanent disuse of any organ weakens and deteriorates it, and progressively diminishes its functional capacity, until it finally disappears. The seal is adapted to its environment, and because it eats depending on local availability, it must design and adjust its eating habits and organs around that. The seal’s teeth may have adapted to suit the environment that it lives in, and because this change proved useful, the characteristic was passed on to its offspring.'
                 },
                 {
                     name: 'Georges Cuvier',
@@ -163,7 +163,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: "There are three types of facilities of seals: eared seals (the family that the northern fur seal is in), earless seals, and walruses. Fur seals are known for their thick fur coats, which are waterproof and mostly windproof. The coat has two layers — a coarse outer layer of guard hair and a velvety underfur. Because they have fur, they have less blubber than other seals, which makes them very agile in the water. This trait can be explained by the First Law — because the seals needed less and less fur, they eventually adapted to their environment so that the fur was perfectly suited to their daily activities. As a result, this change was passed on from offspring and showed up in succeeding generations. Fur seals are well adapted to strolling across land and ice on their muscular tail and flippers, but less adapted to a watery lifestyle. Because they spend a lot of time on land and ice, the strengthened use of their tail and flippers allowed them to develop and keep this useful characteristic."
                 },
                 {
                     name: 'Georges Cuvier',
@@ -192,7 +192,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: 'The Northern fur seal is mostly preyed upon by sharks and killer whales. Occasional predation on live seal pups by Arctic foxes has also been observed. Consequently, pup carcasses are important in enriching the diet of many scavengers, in particular gulls and Arctic foxes. The sharks, killer whales, and Arctic foxes all have inherited acquired characteristics that allow them the diet they have. The more frequent and continuous use of their canine teeth, which they use to tear apart the flesh of seals, gradually strengthens, develops and enlarges that organ. Because of this, this characteristic is passed down from generation to generation.'
                 },
                 {
                     name: 'Georges Cuvier',
@@ -221,7 +221,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: 'The northern fur seal is an eared seal found along the north Pacific Ocean, the Bering Sea, and the Sea of Okhotsk. It’s southernmost reach is from the southern tip of Japan to the southern tip of the Baja California peninsula. As estimated 1.1 million northern fur seals live in this range, of which half breed on the Pribilof Islands in the east Bering Sea. During the winter, the seals move southward, regularly entering Japanese waters and moving along the central and eastern Pacific to British Columbia, Canada and as far south as Baja California. The seals migrate due to breeding, climate, and a moving food source. Because the animals must move to find food, they can adapt to similar environments. These changes, as well as characteristics of the animal, are inherited by each generation and allow the seals continued life.'
                 },
                 {
                     name: 'Georges Cuvier',
@@ -250,7 +250,7 @@ app.controller("answers", function($scope) {
                     name: 'Jean-Baptiste Lamarck',
                     pic: '/images/lamarck.png',
                     likes: Math.floor((Math.random() * 150) + 1),
-                    answer: ''
+                    answer: 'Northern fur seals have extreme sexual dimorphism. Males are 30-40% longer and almost 5 times as heavy as females. Makes are stocky in build and have thick and wide necks, while females are moderate in build, neck, and chest size. Adult females have more complex and variable coloration than adult males, often dark silver-gray to charcoal, where as males are medium gray to black, or reddish to dark brown all over. These differences can be due to inheritance by parents.'
                 },
                 {
                     name: 'Georges Cuvier',
